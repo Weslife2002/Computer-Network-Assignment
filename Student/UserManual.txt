@@ -1,0 +1,15 @@
+To launch, you need to open terminal and launch server first.
+In this step, you need to pass in the command:
+<python> server.py <RTSP port>
+e.g: python server.py 5050
+Then the server will print out its address <ipaddress, RTSP port>
+
+Then you need to launch client by type in this command:
+<python> ClientLauncher.py <RTSP port> <RTP port> <filename>
+e.g: python ClientLauncher.py 5050 9999 movie.Mjpeg
+
+The client GUI will pop up and there 're four buttons: SETUP, PLAY, PAUSE, TEARDOWN
+You need to click on SETUP first to open the RTP connection.
+Then you can click on PLAY to enjoy the movie.
+You can PAUSE any time by click on PAUSE.
+TEARDOWN will allow you to close all RTSP and RTP connection and also close the connection.
